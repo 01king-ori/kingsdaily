@@ -9,11 +9,11 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'Nelson Mandela', 'There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living.', 'admin', new Date(1990, 5, 10)),
-    new Quote(2, 'Mohandas Gandhi', 'Strength does not come from physical capacity. It comes from an indomitable will.', 'admin', new Date(1950, 3, 23)),
-    new Quote(3, 'Rick Flores', 'We have to come for them before they come for us, it is that simple', 'admin', new Date(2012, 8, 17)),
-
-  ]
+  new Quote(1,'Marylin Monroe','I am selfish,impatient and a little insecure.I make mistakes,I am out of control and at times hard to handle.But if you cant handle me at my worst then you sure as hell dont deserve me at my best.','admin', new Date(2020,5,10)),
+  new Quote( 2,'Oscar Wilde','Be yourself; everyone else is already taken','admin',new Date(2020,5,10)),
+  new Quote(3,'Albert Einstein','Two things are infinite;the universe and human stupidity;and I am not sure about the universe','admin',new Date(2020,5,10))  
+  
+]
 
 showDescription= false;//boolean setting to hide and display
 
