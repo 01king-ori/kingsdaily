@@ -3,16 +3,16 @@
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
       <!-- authors details -->
       <div class="form-group">
-        <label for="name">Original Authors Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+        <label for="name">Original Authors Name</label><br>
+        <input type="text-area" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
         <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
           <p>Please add original author's name</p>
         </div>
       </div>
       <!-- quote itself -->
       <div class="form-group">
-        <label for="description">Quote</label>
-        <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="quote" #description="ngModel" required></textarea>
+        <label for="description">Quote</label><br>
+        <input type="text" id="description" [(ngModel)]="newQuote.description" name="quote" #description="ngModel" required>
         <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
           <p> Quote Required</p>
 
@@ -20,8 +20,8 @@
       </div>
       <!--who submitted the quote  -->
       <div class="form-group">
-        <label for="submitter">Submitted By:</label>
-        <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="newQuote.submitter" name="submitter" #description="ngModel" required></textarea>
+        <label for="submitter">Submitted By:</label><br>
+        <input type="text" id="submitter"  [(ngModel)]="newQuote.submitter" name="submitter" #description="ngModel" required>
         <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
           <p> Please add your name</p>
 
