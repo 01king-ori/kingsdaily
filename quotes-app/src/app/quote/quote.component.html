@@ -44,10 +44,11 @@
                 <p>Submitted by {{quote.submitter}}, {{quote.completeDate|dateCount}} days ago</p>
                 <!--calls and displays date count pipe results-->
               </div>
-              <div class="col-2">
-                <!-- triggers an emit event to delete quote -->
+              
+                <p>deleteQuote
                 <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-              </div>
+              </p>
+              
             </div>
           </div>
         </div>
