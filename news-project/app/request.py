@@ -1,4 +1,4 @@
-import urllib.request,json #helps create a connection to our API URL and send a request, formats the JSON response to a Python dictionary
+import urllib.request,json 
 from .models import Sources,Articles,Keyword,Breaking
 
 api_Key= None
