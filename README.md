@@ -1,4 +1,4 @@
-# kingsdaily
+# dailytelegram
 # Author
 Vincent Kingori mwangi
 ## Description
